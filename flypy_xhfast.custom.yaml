@@ -29,14 +29,14 @@ patch:
       states: [🈚️, 😄]
       reset: 1
     - name: prediction  # 仅用于移动端
-      states: [联想关, 联想开]
+      states: [休想, 联想]
     - name: char_mode
-      states: [单字模式关, 单字模式开]
-    - name: charset_hint
-      states: [码区提示关, 码区提示开]
+      states: [词组优先, 单字优先]
     - name: charset
-      states: [通用字符集, 增廣字符集]
+      states: [通用字集, 增廣字集]
       reset: 1
+    - name: charset_hint
+      states: [码区隐藏, 码区显示]
 
   engine/+:
     processors/+:
