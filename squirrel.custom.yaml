@@ -11,8 +11,8 @@ patch:
   style:
     # layout/max_width: 1200
     # 註: 預設的配色方案及代碼(指定爲 style/color_scheme 系統默認色系 - native)
-    color_scheme: songhe                        # macos明亮主题
-    color_scheme_dark: catppuccin_frappe        # macos黑暗主题
+    color_scheme: mint_light_blue                        # macos明亮主题
+    color_scheme_dark: mint_light_blue        # macos黑暗主题
     # color_scheme_dark: catppuccin_macchiato   # macos黑暗主题
 
     show_paging: false
@@ -87,6 +87,28 @@ patch:
       hilited_candidate_label_color: 0x606cff      # 第一候选项编号颜色 Surface0
       hilited_candidate_shadow_color: 0x303546     # 高亮候选阴影
 
+    mint_light_blue:
+      name: "蓝水鸭／Mint Light Blue"
+      author: Mintimate <"Mintimate's Blog">
+      translucency: false                     # 磨砂： false | true
+      mutual_exclusive: false                 # 色不叠加： false | true
+      shadow_size: 0                             # 阴影大小
+      line_spacing: 5                         # 行间距
+      base_offset: 0                          # 字基高
+      alpha: 1                                # 透明度，0~1
+      spacing: 10                             # 拼音与候选项之间的距离 （inline_preedit: false）
+      back_color: 0xefefef                    # 底色
+      hilited_candidate_back_color: 0xed9564  # 选中底色
+      label_color: 0xcac9c8                   # 序号颜色
+      hilited_candidate_label_color: 0xefefef # 选中序号颜色
+      candidate_text_color: 0x424242          # 文字颜色
+      hilited_candidate_text_color: 0xefefef  # 选中文字颜色
+      comment_text_color: 0xcac9c8            # 注颜色
+      hilited_comment_text_color: 0xefefef    # 选中注颜色
+      text_color: 0x6495ed                    # 拼音颜色 （inline_preedit: false）
+      hilited_text_color: 0xed9564            # 选中拼音颜色 （inline_preedit: false）
+
+
     catppuccin_macchiato:
       name: Catppuccin Macchiato
 
@@ -125,33 +147,33 @@ patch:
   # 特定App默认中/英文输入
   app_options:
     com.apple.Spotlight:              # 聚焦搜索
-      ascii_mode: true                # true默认英文,false默认中文
+      ascii_mode: false                # true默认英文,false默认中文
     com.raycast.macos:                # Raycast
-      ascii_mode: true
+      ascii_mode: false
     com.runningwithcrayons.Alfred:    # alfred
-      ascii_mode: true
+      ascii_mode: false
     com.apple.Terminal:               # 终端
-      ascii_mode: true
+      ascii_mode: false
       ascii_punct: true               # 中文状态输出英文标点(半角)
       symbol_unpair_flag: true
     org.alacritty:                    # alacritty 终端
-      ascii_mode: true
+      ascii_mode: false
       ascii_punct: true               # 中文状态输出英文标点(半角)
       symbol_unpair_flag: true
     com.github.wez.wezterm:
-      ascii_mode: true
+      ascii_mode: false
       ascii_punct: true
       symbol_unpair_flag: true
     com.mitchellh.ghostty:
-      ascii_mode: true
+      ascii_mode: false
       ascii_punct: true
       symbol_unpair_flag: true
     net.kovidgoyal.kitty:
-      ascii_mode: true
+      ascii_mode: false
       ascii_punct: true
       symbol_unpair_flag: true
     com.googlecode.iterm2:            # iterm2
-      ascii_mode: true
+      ascii_mode: false
       ascii_punct: true               # 中文状态输出英文标点(半角)
       symbol_unpair_flag: true
     com.apple.Stickies:
@@ -160,24 +182,24 @@ patch:
       ascii_mode: false
     com.neovide.neovide:
       vim_mode: true
-      ascii_mode: true
+      ascii_mode: false
       ascii_punct: true               # 中文状态输出英文标点(半角)
       symbol_unpair_flag: true
     com.microsoft.VSCode:
       vim_mode: true
-      ascii_mode: true
+      ascii_mode: false
       ascii_punct: true
       symbol_unpair_flag: true
     com.trae.app:                     # trae
       vim_mode: true
-      ascii_mode: true
+      ascii_mode: false
       ascii_punct: true
       symbol_unpair_flag: true
     com.DanPristupov.Fork:
-      ascii_mode: true
+      ascii_mode: false
       ascii_punct: true
     com.surteesstudios.Bartender:
-      ascii_mode: true
+      ascii_mode: false
     com.microsoft.edgemac:
       ascii_mode: false
     com.google.Chrome:
